@@ -5,7 +5,7 @@ library(shinyjs)
 library(plotly)
 library(png)
 
-# Define Python packages needed for the app =======
+# Define Python packages needed for the app =======rm -f ./.git/index.lock
 PYTHON_DEPENDENCIES = c("numpy", "pandas", "scikit-learn", "matplotlib", 
                         "tensorflow", "keras", "keras-tuner")
 
@@ -13,7 +13,7 @@ PYTHON_DEPENDENCIES = c("numpy", "pandas", "scikit-learn", "matplotlib",
 # virtualenv_dir = Sys.getenv('VIRTUALENV_NAME')
 # python_path = Sys.getenv('PYTHON_PATH')
 virtualenv_dir = "myenv"
-python_path = "usr/bin/python3"
+python_path = "app/.heroku/python"
 
 reticulate::virtualenv_create(envname = virtualenv_dir, python = python_path)
 reticulate::virtualenv_install(virtualenv_dir, packages = PYTHON_DEPENDENCIES,
