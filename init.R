@@ -1,6 +1,6 @@
 # init.R
 
-my_packages = c("DT", "shinyjs", "plotly", "reticulate", "png", "tools")
+my_packages = c("DT", "shinyjs", "plotly", "reticulate", "png")
 
 install_if_missing = function(p) {
   if(p %in% rownames(installed.packages()) == FALSE) {
