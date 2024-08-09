@@ -1,3 +1,5 @@
+source("init.R")
+
 # Import R packages needed for the app ======
 library(shiny)
 library(DT)
